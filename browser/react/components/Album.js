@@ -8,6 +8,11 @@ const Album = (props) => {
   const isPlaying = props.isPlaying;
   const toggleOne = props.toggleOne;
 
+  const albumId = props.routeParams.albumId;
+  const selectAlbum = props.selectAlbum;
+
+  selectAlbum(albumId);
+
   return (
     <div className="album">
       <div>
